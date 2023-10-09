@@ -3,7 +3,6 @@
 --start relative number by default
 vim.opt.relativenumber = true
 
-
 require('packer').startup(function(use)
 	--packer can manage itself
 
@@ -14,7 +13,7 @@ require('packer').startup(function(use)
 		"williamboman/mason.nvim",
 		run = ":MasonUpdate" -- update mason when installing
 	}
-	
+
 	--alpha nvim
 	use{
 		'goolord/alpha-nvim',
@@ -40,12 +39,13 @@ require('packer').startup(function(use)
 	  'nvim-lualine/lualine.nvim',
   		requires = { 'nvim-tree/nvim-web-devicons', opt = true }
 	}
+	
+	--nvim tree lua
+	use 'nvim-tree/nvim-tree.lua'
+
 
 	--wakatime
 	use 'wakatime/vim-wakatime'
-
-	--file explorer
-	use 'kyazdani42/nvim-tree.lua'
 
 	--IM a Russian so I need Russian language support ;D, also I need to learn English better :D, im actually Mexican lol
 	--rust syntax highlighting and indentation and lsp support and completion and snippets and formatting and autoformatting and autoformatting on save
@@ -160,5 +160,9 @@ require('lualine').setup {
   tabline = {},
   extensions = {}
 }
+
+
+--nvim tree config 
+require'nvim-tree'.setup()
 
 
