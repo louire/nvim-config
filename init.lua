@@ -14,6 +14,15 @@ require('packer').startup(function(use)
 		"williamboman/mason.nvim",
 		run = ":MasonUpdate" -- update mason when installing
 	}
+	
+	--alpha nvim
+	use{
+		'goolord/alpha-nvim',
+		requires = {'nvim-tree/nvim-web-devicons'},
+		config = function() 
+			require'alpha'.setup(require'alpha.themes.startify'.opts) 
+		end
+	}
 
 	--wakatime
 	use 'wakatime/vim-wakatime'
