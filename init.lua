@@ -1,4 +1,9 @@
 --Packer plugin manager config stuff
+
+--start relative number by default
+vim.opt.relativenumber = true
+
+
 return require('packer').startup(function(use)
 	--packer can manage itself
 
