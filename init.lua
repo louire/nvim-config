@@ -41,6 +41,16 @@ return require('packer').startup(function(use)
 	--autopairs
 	use 'jiangmiao/auto-pairs'
 
+	--svelte syntax highlighting and indentation
+	use 'leafgarland/typescript-vim'
+	use 'evanleck/vim-svelte'
+
+	--IM a Russian so I need Russian language support ;D, also I need to learn English better :D, im actually Mexican lol
+	--rust syntax highlighting and indentation and lsp support and completion and snippets and formatting and autoformatting and autoformatting on save
+	use 'rust-lang/rust.vim'
+	use 'simrat39/rust-tools.nvim'
+	
+	
 end)
 
 
