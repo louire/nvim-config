@@ -28,6 +28,19 @@ return require('packer').startup(function(use)
 
 	--line numbers
 	use 'nathanaelkane/vim-indent-guides'
+
+	--git
+	use 'tpope/vim-fugitive'
+
+	--commenting
+	use 'tpope/vim-commentary'
+
+	--surround
+	use 'tpope/vim-surround'
+
+	--autopairs
+	use 'jiangmiao/auto-pairs'
+
 end)
 
 

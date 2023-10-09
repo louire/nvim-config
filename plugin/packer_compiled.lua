@@ -74,6 +74,11 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  ["auto-pairs"] = {
+    loaded = true,
+    path = "/Users/louirecio/.local/share/nvim/site/pack/packer/start/auto-pairs",
+    url = "https://github.com/jiangmiao/auto-pairs"
+  },
   gruvbox = {
     loaded = true,
     path = "/Users/louirecio/.local/share/nvim/site/pack/packer/start/gruvbox",
@@ -114,10 +119,25 @@ _G.packer_plugins = {
     path = "/Users/louirecio/.local/share/nvim/site/pack/packer/start/vim-airline-themes",
     url = "https://github.com/vim-airline/vim-airline-themes"
   },
+  ["vim-commentary"] = {
+    loaded = true,
+    path = "/Users/louirecio/.local/share/nvim/site/pack/packer/start/vim-commentary",
+    url = "https://github.com/tpope/vim-commentary"
+  },
+  ["vim-fugitive"] = {
+    loaded = true,
+    path = "/Users/louirecio/.local/share/nvim/site/pack/packer/start/vim-fugitive",
+    url = "https://github.com/tpope/vim-fugitive"
+  },
   ["vim-indent-guides"] = {
     loaded = true,
     path = "/Users/louirecio/.local/share/nvim/site/pack/packer/start/vim-indent-guides",
     url = "https://github.com/nathanaelkane/vim-indent-guides"
+  },
+  ["vim-surround"] = {
+    loaded = true,
+    path = "/Users/louirecio/.local/share/nvim/site/pack/packer/start/vim-surround",
+    url = "https://github.com/tpope/vim-surround"
   },
   ["vim-wakatime"] = {
     loaded = true,
