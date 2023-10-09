@@ -31,6 +31,9 @@ require('packer').startup(function(use)
 	use 'hrsh7th/cmp-path'
 	use 'hrsh7th/cmp-cmdline'
 	use 'hrsh7th/nvim-cmp'
+	
+	--gitgutter
+	use 'airblade/vim-gitgutter'
 
 	--wakatime
 	use 'wakatime/vim-wakatime'
