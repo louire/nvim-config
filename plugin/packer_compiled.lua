@@ -100,6 +100,11 @@ _G.packer_plugins = {
     path = "/Users/louirecio/.local/share/nvim/site/pack/packer/start/cmp-path",
     url = "https://github.com/hrsh7th/cmp-path"
   },
+  ["lualine.nvim"] = {
+    loaded = true,
+    path = "/Users/louirecio/.local/share/nvim/site/pack/packer/start/lualine.nvim",
+    url = "https://github.com/nvim-lualine/lualine.nvim"
+  },
   ["mason.nvim"] = {
     loaded = true,
     path = "/Users/louirecio/.local/share/nvim/site/pack/packer/start/mason.nvim",
@@ -139,6 +144,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/louirecio/.local/share/nvim/site/pack/packer/start/rust.vim",
     url = "https://github.com/rust-lang/rust.vim"
+  },
+  ["vim-gitgutter"] = {
+    loaded = true,
+    path = "/Users/louirecio/.local/share/nvim/site/pack/packer/start/vim-gitgutter",
+    url = "https://github.com/airblade/vim-gitgutter"
   },
   ["vim-svelte"] = {
     loaded = true,
