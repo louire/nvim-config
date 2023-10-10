@@ -100,6 +100,11 @@ _G.packer_plugins = {
     path = "/Users/louirecio/.local/share/nvim/site/pack/packer/start/cmp-path",
     url = "https://github.com/hrsh7th/cmp-path"
   },
+  ["hologram.nvim"] = {
+    loaded = true,
+    path = "/Users/louirecio/.local/share/nvim/site/pack/packer/start/hologram.nvim",
+    url = "https://github.com/edluffy/hologram.nvim"
+  },
   ["lualine.nvim"] = {
     loaded = true,
     path = "/Users/louirecio/.local/share/nvim/site/pack/packer/start/lualine.nvim",
@@ -134,6 +139,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/louirecio/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
+  },
+  ["pets.nvim"] = {
+    loaded = true,
+    path = "/Users/louirecio/.local/share/nvim/site/pack/packer/start/pets.nvim",
+    url = "https://github.com/giusgad/pets.nvim"
   },
   ["rust-tools.nvim"] = {
     loaded = true,

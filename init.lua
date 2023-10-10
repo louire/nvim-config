@@ -55,6 +55,9 @@ require('packer').startup(function(use)
 	--Svelte syntax highlighting and indentation and lsp support and completion and snippets and formatting and autoformatting and autoformatting on save
 	use 'evanleck/vim-svelte'
 	
+	
+
+
 
 	
 end)
@@ -164,5 +167,4 @@ require('lualine').setup {
 
 --nvim tree config 
 require'nvim-tree'.setup()
-
 
