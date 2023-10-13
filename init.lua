@@ -57,7 +57,16 @@ require('packer').startup(function(use)
 	--Svelte syntax highlighting and indentation and lsp support and completion and snippets and formatting and autoformatting and autoformatting on save
 	use 'evanleck/vim-svelte'
 	
+	--Plenary for telescope
+	use "nvim-lua/plenary.nvim"
 	
+	--telescope	
+	use {
+	  'nvim-telescope/telescope.nvim', tag = '0.1.4',
+		-- or                            , branch = '0.1.x',
+  	requires = { {'nvim-lua/plenary.nvim'} }
+	}	
+
 
 
 
