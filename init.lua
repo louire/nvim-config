@@ -1,8 +1,8 @@
 --Packer plugin manager config stuff
 
 --start relative number by default
+vim.cmd('set number relativenumber')
 vim.opt.relativenumber = true
-
 require('packer').startup(function(use)
 	--packer can manage itself
 
@@ -31,6 +31,12 @@ require('packer').startup(function(use)
 	use 'hrsh7th/cmp-cmdline'
 	use 'hrsh7th/nvim-cmp'
 	
+	-- Python LSP using pyright
+	require'lspconfig'.pyright.setup{}
+
+
+	-- lsp 
+	use 'neovim/nvim-lspconfig'
 
 
 	--gitgutter
@@ -66,8 +72,6 @@ require('packer').startup(function(use)
 		-- or                            , branch = '0.1.x',
   	requires = { {'nvim-lua/plenary.nvim'} }
 	}	
-
-
 
 
 	
@@ -115,7 +119,7 @@ require("mason").setup()
     sources = cmp.config.sources({
       { name = 'git' }, -- You can specify the `git` source if [you were installed it](https://github.com/petertriho/cmp-git).
     }, {
-      { name = 'buffer' },
+
     })
   })
 
@@ -174,6 +178,23 @@ require('lualine').setup {
   tabline = {},
   extensions = {}
 }
+
+--require'lspconfig'.tsserver.setup{
+  --  cmd{
+--    	"typescript-language-server", "--stdio"
+    --}
+--    filetypes{
+--    	"javascript", "javascriptreact", "javascript.jsx", "typescript", "typescriptreact", "typescript.tsx" 
+--    }
+--    init_options{
+-- 	 hostInfo = "neovim"
+--    }
+--    root_dir{
+--	root_pattern("package.json", "tsconfig.json", "jsconfig.json", ".git")
+--    }
+--    single_file_support{true}
+--}
+
 
 
 --nvim tree config 
