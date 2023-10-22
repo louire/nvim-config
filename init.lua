@@ -3,6 +3,7 @@
 --start relative number by default
 vim.cmd('set number relativenumber')
 vim.opt.relativenumber = true
+
 require('packer').startup(function(use)
 	--packer can manage itself
 
@@ -11,8 +12,12 @@ require('packer').startup(function(use)
 	--manage mason 
 	use {
 		"williamboman/mason.nvim",
+		"williamboman/mason-lspconfig.nvim",
+		"neovim/nvim-lspconfig",
 		run = ":MasonUpdate" -- update mason when installing
 	}
+	
+	
 
 	--alpha nvim
 	use{
@@ -140,14 +145,6 @@ require("mason").setup()
       { name = 'cmdline' }
     })
   })
-
-  -- Set up lspconfig.
-  local capabilities = require('cmp_nvim_lsp').default_capabilities()
-  -- Replace <YOUR_LSP_SERVER> with each lsp server you've enabled.
-  require('lspconfig')['<YOUR_LSP_SERVER>'].setup {
-    capabilities = capabilities
-  }
-
 
 
 --lualine config 
